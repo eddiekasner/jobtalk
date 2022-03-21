@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Hazard vs. Risk:   Use Cases for Precision Agriculture in Exposure Science</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Edward Kasner, PhD, MPH" />
+    <meta name="date" content="2022-03-21" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Hazard vs. Risk: <br> Use Cases for Precision Agriculture in Exposure Science
+### Edward Kasner, PhD, MPH
+### DEOHS Faculty Candidate Seminar
+### 2022-03-21
+
+---
+
+
+
+
+## Today's expectations
+
+- **Time:** 40 minutes
+
+- **Audience:** DEOHS students, staff, and faculty
+
+- **Goal:** Demonstrate teaching approach to undergraduate students
+
+- **Activities**
+    - *Individual:* **live-audience polling**; quick-writes
+    - *Group:* norms; random call; think-pair-share; discussion guides
+
+???
+
+I go by he/him pronouns. My living space sits on Coast Salish land. I would like to acknowledge the contributions and lives, knowledge, and labor of native, Black, and other people of color. We are indebted to their sacrifices and those of all workers on the front lines whose labor and participation in research has contributed to improvements in population health.
+  
+---
+class: inverse
+
+## Objectives
+
+1. *Differentiate risk perception and risk assessment*
+
+2. Examine use cases for precision agriculture in exposure science
+
+3. Define reproducibility in environmental and occupational health sciences
+
+---
+## Terms
+
+- **Risk assessment:** probability of adverse health effects from human *exposure* to a *hazardous agent*
+
+- **Use case:** interactions between an actor and a system to achieve a goal
+
+- **Precision agriculture:** farm management strategy that uses information technology to improve commodity quality and production
+
+- **Reproducible research:** documentation of methods used to obtain data and making code to calculate results easily accessible
+
+???
+
+- Key ingredients for today
+- Interplay between hazard and exposure
+- Rooted in computing, but offers a great way for us to problem solve and use the hierarchy of controls to develop interventions
+- Precision agriculture is an exciting areas I've engaged with that generates a lot of data for decision support
+- Reproducible research is a exciting area that contributed to the pandemic response
+
+---
+class: center
+
+#### Use Cases for Precision Agriculture in Exposure Science
+
+&lt;img src="images/talk-map-basic.png" width="150%" style="display: block; margin: auto;" /&gt;
+
+???
+- Mapped out today's talk for you with these ingredients
+- The flow centers around the student experience through field studies and classroom and laboratory science
+- Risk assessment, which can be defined as risk = hazard x exposure, 
+
+---
+class: center
+
+#### Use Cases for Precision Agriculture in Exposure Science
+
+&lt;img src="images/talk-map-full.png" width="150%" style="display: block; margin: auto;" /&gt;
+
+.footnote[
+&lt;tiny&gt;&lt;small&gt;Source: Government of Canada, 2022. What is open science?&lt;/small&gt;&lt;/tiny&gt;
+]
+
+???
+
+---
+class: center
+
+### [Lead galena](https://www.sciencedirect.com/topics/earth-and-planetary-sciences/galena): Is this miner's health at risk?
+
+&lt;img src="images/lead-miner.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+???
+
+Wikipedia: Galena, also called lead glance, is the natural mineral form of lead(II) sulfide. It is the most important ore of lead and an important source of silver.
+
+--
+
+### When would lead be a *risk* instead of a *hazard* ?
+
+.footnote[
+&lt;tiny&gt;&lt;small&gt;Source: Getty Images. &lt;/small&gt;&lt;/tiny&gt;
+]
+
+???
+
+1. Natural mineral form of lead(II) sulfide
+2. Important ore of lead and source of silver
+3. Not harmful to touch or handle
+
+---
+### What's the difference between a hazard and a risk?
+
+- Exposure or action is needed to transform a hazard into a risk
+
+- Hazard is the potential to cause harm, while risk is the
+likelihood of harm in defined circumstances
+
+- Hazard is the possibility of something causing harm, while risk
+is the probability of something causing harm
+
+---
+class: center
+
+### [Poll](https://www.polleverywhere.com/multiple_choice_polls/aqvtTUFajoi86SV55okfe): Which items are highest risk? Please pick your top 5.
+
+&lt;img src="images/risk-perception-list.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+.footnote[
+&lt;tiny&gt;&lt;small&gt;Source: All icons from The Noun Project, 2022. &lt;/small&gt;&lt;/tiny&gt;
+]
+
+???
+
+---
+&lt;img src="images/perceived-risk-lowv.png" width="50%" style="display: block; margin: auto;" /&gt;
+
+.footnote[
+&lt;tiny&gt;&lt;small&gt;Source: Fishhoff et al., 1978. &lt;/small&gt;&lt;/tiny&gt;
+]
+
+???
+In fact, this poll was first administered in 1978.
+
+---
+class: middle
+
+.pull-left[
+**Perceived as less risky**
+- Voluntary
+- Controlled by oneself
+- Clear benefits
+- Distributed fairly
+- Natural
+- Trusted source
+- Familiar
+- Affect adults
+- **Low dread**
+- **Known**
+]
+
+.pull-right[
+**Perceived as more risky**
+- Involuntary
+- Controlled by others
+- Unclear benefits
+- Distributed unfairly
+- Human-made
+- Untrusted source
+- Unfamiliar
+- Affect children
+- **High dread**
+- **Unknown**
+]
+
+---
+
+&lt;img src="images/dread-unknown-risk.png" width="75%" style="display: block; margin: auto;" /&gt;
+
+.footnote[
+&lt;tiny&gt;&lt;small&gt;Source: Fox-Glassman and Weber, 2016. What makes risk acceptable? ... &lt;/small&gt;&lt;/tiny&gt;
+]
+
+???
+In fact, this poll was first administered back in 1978.
+
+---
+&lt;img src="images/perceived-risk-benefit.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+.footnote[
+&lt;tiny&gt;&lt;small&gt;Source: Fox-Glassman and Weber, 2016. What makes risk acceptable? ... &lt;/small&gt;&lt;/tiny&gt;
+]
+
+???
+Shows most response have been the same.
+
+---
+### Risk assessment vs. risk perception
+
+- Risk assessment
+  - Hazard `\(\neq\)` Risk
+  - Risk occurs when there is *exposure* to the hazard
+  - **Risk `\(=\)` Hazard `\(\times\)` Exposure**
+  
+- Risk perception
+  - Involves psychosocial factors
+  - People consider different things hazardous or risky
+  - **Risk `\(=\)` Hazard `\(+\)` Outrage**
+
+---
+## Canaries in the coal mine
+
+&lt;img src="images/canary-coal-mine.jpg" width="95%" style="display: block; margin: auto;" /&gt;
+
+.footnote[
+&lt;tiny&gt;&lt;small&gt;Source: Getty Images. &lt;/small&gt;&lt;/tiny&gt;
+]
+
+---
+## Occupational carcinogens
+
+- Risk = Hazard `\(\times\)` Exposure 
+- Workers have had a major role in identifying human carcinogens
+- Among 120 IARC Group 1 carcinogens:
+    - 40% were identified in occupational studies
+    - 60+% have documented occupational exposures
+- Progress, but
+    - more than 80,000 chemicals used in industry
+    - most agents have never been evaluated, so human evidence
+
+---
+### Risk assessment and scientific uncertainty 
+
+&lt;img src="images/science-divided.jpg" width="75%" style="display: block; margin: auto;" /&gt;
+
+.footnote[
+&lt;tiny&gt;&lt;small&gt;Source: The New Yorker, 1988. &lt;/small&gt;&lt;/tiny&gt;
+]
+
+???
+While we can rate things for an exercise like this, it's different to live in a place where hazards are seen as more risky.
+
+---
+### Science and uncertainty
+
+- Scientific work is incomplete
+- Scientific work is liable to modification by advancing knowledge 
+- That does not confer freedom to ignore current knowledge
+- Or postpone action that it appears to demand at a given time
+
+### Conditions for acceptable risk
+
+- Level of risk must be below a threshold
+- Benefits must clearly outweigh risks
+- Distributional justice: health of a subgroup cannot be sacrificed
+
+---
+
+### Precautionary principle
+
+**Wingspread Statement:** 
+
+&gt;*“When an activity raises threats to the environment or human health, precautionary measures should be taken, even if some cause-and-effect relationships are not fully established scientifically”*
+
+.footnote[
+&lt;tiny&gt;&lt;small&gt;Source: Raffensperger and Tickner, 1999. &lt;/small&gt;&lt;/tiny&gt;
+]
+
+???
+While we can rate things for an exercise like this, it's different to live in a place where hazards are seen as more risky.
+
+---
+class: center
+
+### [Poll](https://www.polleverywhere.com/clickable_images/KOdpa10xXfvbxeTBR4f4R): Plot climate change on the risk perception matrix.
+
+&lt;img src="images/climate-change.jpg" width="100%" style="display: block; margin: auto;" /&gt;
+
+???
+
+- Pesticides on the poll
+- Wildfire smoke is one of many climate change impacts
+
+---
+class: inverse
+
+## Objectives
+
+1. Differentiate risk perception and risk assessment
+
+2. *Examine use cases for precision agriculture in exposure science*
+
+3. Define reproducibility in environmental and occupational health sciences
+
+---
+
+### What is exposure science?
+
+- Study of contact (e.g. **swallowing, breathing, or touching**) over time and space with environmental factors and their effects on the human body (**"place and time makes the poison"**)
+
+- Scientists seek to understand how various agents are transported across **air, water, and land** and transformed in the human body
+- It is problem-based
+    - Defines sources, pathways, and routes of exposure
+    - Requires measurement, interpretation, and judgment
+    - Suggests interventions to be evaluated
+
+---
+#### Mathematical definition of exposure
+
+`$$E = \int_{t1}^{t2} C(t) dt$$`
+
+`\(E\)` = exposure is the integral of a concentration that varies with time between the beginning and end of exposure ( `\(\frac{mass \times time}{volume}\)` )
+
+`\(C\)` = concentration of a substance ( `\(\frac{mass}{volume}\)` ) at any given time `\(t\)`
+
+`\(t_1\)` and `\(t_2\)` = beginning and end of exposure, respectively ( `\(t\)` )
+
+.footnote[
+&lt;tiny&gt;&lt;small&gt;Source: Fenske, 2016. &lt;/small&gt;&lt;/tiny&gt;
+]
+
+---
+#### Thought experiment: mathematical definition of exposure, example 1
+
+`$$E = \int_{t1}^{t2} C(t) dt$$`
+
+- From 8:30 to 9:50 AM, you are in a room with a constant air concentration of 10 `\(\mu\)`g/m&lt;sup&gt;3&lt;/sup&gt; of Chemical A. 
+
+- **What is your exposure?**
+
+.footnote[
+&lt;tiny&gt;&lt;small&gt;Source: Fenske, 2016. &lt;/small&gt;&lt;/tiny&gt;
+]
+
+---
+#### Thought experiment: mathematical definition of exposure, example 2
+
+`$$E = \int_{t1}^{t2} C(t) dt$$`
+
+- In the room next door, the air concentration of a highly toxic chemical is 50 `\(\mu\)`g/m&lt;sup&gt;3&lt;/sup&gt;.
+
+- You need to walk through that room to get outdoors. It will take you 10 seconds to walk through the room.
+
+- **What is your exposure?**
+
+.footnote[
+&lt;tiny&gt;&lt;small&gt;Source: Fenske, 2016. &lt;/small&gt;&lt;/tiny&gt;
+]
+
+---
+class: inverse, center, middle
+
+# Use Case #1: Pesticides Exposure
+
+---
+
+Evolution of ag tech
+
+???
+
+This offers a comparison between the evolutionary technological phases of agriculture and general industry. Agriculture 0.0 involved prevalent use of manual labor and animal traction up until 1920 or so. Then, Agriculture 1.0 began with the introduction of diesel engines alongside prevalent manual labor through 1960. Agriculture 2.0 might be defined as the time between 1960 and 1980 when many manual labor tasks were replaced by machines in farm production areas and resulted in increased yields due to genetic and chemical innovations. Agriculture 3.0 from 1980 to 2000 was defined by the introduction of more electronic control systems on board tractors and the first attempts to digitalize farm management.  After 2000, Agriculture 4.0 or “Smart Agriculture” might be defined as the diffusion of tractor position systems, communication protocols, and integrated farm information systems (wireless networks, Bluetooth, cloud computing, artificial intelligence).
+
+---
+
+Precision ag diagram
+
+.footnote[
+&lt;tiny&gt;&lt;small&gt;Source:&lt;/small&gt;&lt;/tiny&gt;
+]
+
+???
+
+This is a conceptual diagram of a decision support system from a 1997 NAS report. Tracing the steps in the figure, information can be viewed as flowing from environment via human or instrumented sensors to a database. The data is analyzed and manipulated for storage and transmission to a user as part of a decision process, which results in an action to be executed within the environment. And the cycle continues. 
+ 
+I think I heard this from Cap that about 10% of farms produce roughly 90% of food and are highly engaged in technology. 90% of farms produce less food and might have less technology. The pandemic has increased bandwidth and the next generation of farmers will be very connected. 
+
+Looking ahead with cautious optimism, it may finally be data’s time to shine, but it won’t be without challenges of course. 
+
+---
+
+Ag Tech Landscape
+
+???
+
+We’ve been hearing about data for many years, but translating it into actionable intelligence for the farmer was elusive. With data quality improving and the cost / availability of computing power, artificial intelligence, and machine learning becoming more accessible, the tide might be shifting. This is a closer look at what is happening today. It’s graphic from “Better Food Ventures” and they create heat maps like this. I’ve heard reports of growers in our region using upwards of 20 mobile apps to make decisions on their farms. My interest is: how do you inject occupational safety and health into this picture?
+
+---
+
+Networked farm
+
+???
+
+Historically, measurement of environmental contaminants has posed significant challenges to characterizing human health risks, especially in rural areas. Modern decision support systems are powered by models that analyze vast amounts of data compiled from geospatial, optical, electro-chemical, mechanical, meteorological, and remote sensing technologies. The proliferation of sensor networks has enabled growers to optimize planting decisions, track crop health, and guide agrochemical use.  What tools are we looking at to improve safety and health?
+
+
+---
+class: center, middle
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/QvFoRk4JsPc?start=123" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay=1&amp;mute=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/Kle7lhBNtF8?start=51" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay=1&amp;mute=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+
+---
+NAS Exposure Science
+
+---
+class: center, middle
+
+&lt;iframe width="760" height="515" src="https://www.youtube.com/embed/wwAmAj-OrDI?start=20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay=1&amp;mute=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+
+---
+
+- Engineering controls
+  - Sprayer type and components
+- Administrative controls
+  - Drift sensors: alerts
+  - Wind sensors: alerts
+
+---
+
+## Magali's results
+
+---
+
+## Yoni's results
+
+---
+## Practical Solutions ©
+
+---
+class: inverse, center, middle
+
+# Use Case #2: Wildfire Smoke Exposure
+
+---
+class: inverse
+
+---
+## Practical Solutions ©
+
+
+## Objectives
+
+1. Differentiate risk perception and risk assessment
+
+2. Examine use cases for precision agriculture in exposure science
+
+3. *Define reproducibility in environmental and occupational health sciences*
+
+
+---
+
+### Reproducible Research
+
+- **Reproducibility:** ability to obtain results by using the same data, code, and procedures
+
+- **Replicability:** ability to arrive at the same scientific conclusions in a new study with new data, possibly different methods, and new analyses
+
+- National Academies of Sciences, Engineering, and Medicine (2019):
+    - Summary: [10 Things to Know About Reproducibility and Replicability](https://www.nap.edu/resource/25303/Ten%20Things%20to%20Know%20about%20Reproducibility%20and%20Replicability.pdf)
+    
+    - Full report: [Reproducibility and Replicability in Science](https://www.nationalacademies.org/our-work/reproducibility-and-replicability-in-science)
+    
+???
+
+- Two scientists from audience for reproducibility and replicability
+- General process has been supercharged by computing and coding
+- Transparency, openness.
+- Lots of energy around this right now, with good reason to advance since more quickly. 
+- Change paradigm to share data and code with a willingness to be critiqued publicly 
+
+---
+
+Working with students
+
+Magali, grad
+Christine, undergrad
+Claire, grad
+Aarti, undergrad
+Yoni, grad
+
+---
+
+Bloom's
+
+--- 
+
+Teaching Philosophy
+
+---
+class: center, middle
+
+&lt;img src="images/talk-map-expanded.png" width="150%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Closing thoughts. Self-check. Can I...
+
+  - differentiate risk perception and risk assessment?
+  
+  - explain the difference between a hazard and a risk?
+  
+  - give two examples of exposure science in precision agriculture?
+  
+  - describe reproducibility?
+
+---
+class: center, middle
+
+&lt;iframe src="https://giphy.com/embed/jNYUeDwoUoloEswJm8" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen&gt;&lt;/iframe&gt;&lt;p&gt;&lt;a href="https://giphy.com/gifs/question-quiz-mark-jNYUeDwoUoloEswJm8"&gt;&lt;/a&gt;&lt;/p&gt;
+
+---
+
+class: center, middle
+
+# Extra slides
+
+---
+
+### Exposure science is...
+
+- a science of measurement requiring interpretation and judgment
+- a study of time and place (*"place and time makes the poison"*)
+- problem-based
+    - exposure measurements define sources and pathways
+    - suggest interventions to be evaluated
+- part of the risk assessment framework
+
+---
+
+### Industrial Hygiene
+
+- **Anticipation:** proactively estimate potential health and safety concerns that are commonly, or at least potentially, associated with a given occupational or environmental setting
+- **Recognition:** identify potential and actual hazards in a workplace through direct inspection
+- **Evaluation:** measure exposures through visual or instrumental monitoring of a site
+- **Control:** reduce the risk to health and safety through administrative engineering measures
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
